@@ -52,7 +52,7 @@ from openai import OpenAI
 grok_client = OpenAI(
   api_key=os.getenv("GROK_API_KEY"),
   base_url="https://api.x.ai/v1",
-  organization=os.getenv("OPENAI_ORGANIZATION"),
+#   organization=os.getenv("OPENAI_ORGANIZATION"),
 )
 
 async def grok_search( query: str, websocket: WebSocket):
